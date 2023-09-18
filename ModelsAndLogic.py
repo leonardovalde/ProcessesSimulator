@@ -10,8 +10,6 @@ listEvents = []
 # Diccionario para el estado de la CPU
 getBussy = {'status': False}
 
-# Crea un archivo para guardar el log
-log_file = open("log.txt", "w")
 
 
 class Cpu:

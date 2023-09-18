@@ -10,6 +10,10 @@ listEvents = []
 # Diccionario para el estado de la CPU
 getBussy = {'status': False}
 
+# Crea un archivo para guardar el log
+log_file = open("log.txt", "w")
+
+
 class Cpu:
 
     def __init__(self):
@@ -227,3 +231,4 @@ class ProcessCreator:
     def createProcess(self, max_process_life_time, max_next_IO_time, max_IO_execution_time):
         self.processNumber = self.processNumber + 1
         return Process(self.processNumber, self.generateRandomTimeLife(max_process_life_time), self.generateRandomIOaction(max_next_IO_time), self.generateRandomIOtimeAction(max_IO_execution_time), "Ready")
+

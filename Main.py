@@ -1,8 +1,7 @@
 import random
 import time
 import threading
-from Processimulator import Simulator
-
+from ModelsAndLogic import Simulator
 # Variable de simulación
 simulation = Simulator('time', 1, 5, 20, 4, 4, 3)
 
@@ -35,7 +34,6 @@ def start_thread(time):
 
 if __name__ == "__main__":
     print("Process Manager Project")
-
     # Iniciar la simulación
     num_procesos = 10  # Puedes ajustar la cantidad de procesos
     start_simulation()
